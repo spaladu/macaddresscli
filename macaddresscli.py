@@ -5,11 +5,10 @@ import re
 import argparse
 
 # API KEY
-key = "aat_R43cnJtoaHD21AtZ65DIhS5qwhdqH"
+key = "ENTER YOUR API KEY HERE"
 
 '''Below function checks the argument MACADDRESS to be valid and returns a boolean. It will accept and verifies all the below MACADDRESS formats:
 XX: XX: XX: XX: XX: XX OR  XX-XX-XX-XX-XX-XX OR XXXXXXXXXXXX'''
-
 
 def macaddress_check(mac_address):
     check_bool = re.match(
@@ -21,6 +20,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("mac", type=str)
+    #positional argument for mac_address
     args = parser.parse_args()
     mac_address = args.mac
 
@@ -33,6 +33,6 @@ def main():
         print("Invalid MAC Address")
 
 
-# macaddio_request("443839ffef57")
+
 if __name__ == "__main__":
     main()

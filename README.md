@@ -18,7 +18,7 @@ Then run the Script with a valid Mac Address:
 ```javascript
 ./macaddrcli.py "443839ffef57"
 ```
-Output:
+Output (vendor name):
 ```javascript
 Cumulus Networks, Inc
 ```

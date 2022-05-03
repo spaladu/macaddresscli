@@ -19,10 +19,10 @@ def macaddress_check(mac_address):
 def main():
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("mac", type=str)
+    parser.add_argument("mac_address", type=str, help="ENTER VALID MAC ADDRESS")
     #positional argument for mac_address
     args = parser.parse_args()
-    mac_address = args.mac
+    mac_address = args.mac_address
 
     while macaddress_check(mac_address):
         #this while conditional only runs if the mac address is verified and returns true.

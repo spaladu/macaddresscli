@@ -15,7 +15,7 @@ def macaddress_check(mac_address):
         "^([0-9A-Fa-f]{2}[:.-]?){5}([0-9A-Fa-f]{2})$", mac_address.strip())
     return check_bool
 
-
+#main function
 def main():
 
     parser = argparse.ArgumentParser()
@@ -25,6 +25,7 @@ def main():
     mac_address = args.mac
 
     while macaddress_check(mac_address):
+        #this while conditional only runs if the mac address is verified and returns true.
         response = requests.get(
             "https://api.macaddress.io/v1?apiKey="+key+"&output=vendor&search="+mac_address)
         print(response.text)

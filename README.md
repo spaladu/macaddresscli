@@ -29,6 +29,17 @@ If you provide a invalid Mac Address the Output will show:
 ```javascript
 Invalid MAC Address
 ```
+Help argument -h:
+```javascript
+ ./macaddrcli.py -h                                                                                                                                                            ─╯
+usage: macaddresscli.py [-h] mac_address
+
+positional arguments:
+  mac_address  ENTER VALID MAC ADDRESS
+
+optional arguments:
+  -h, --help   show this help message and exit
+```
 If your API is invalid or empty the Output will show:
 ```javascript
 Access restricted. Enter the correct API key.

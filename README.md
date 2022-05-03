@@ -24,6 +24,11 @@ Cumulus Networks, Inc
 ```
 - You can use "XX:XX:XX:XX:XX:XX" OR  "XX-XX-XX-XX-XX-XX" OR "XXXXXXXXXXXX" for Mac Address format.
 
+One more example of usage:
+```javascript
+./macaddrcli.py "2C:54:91:88:C9:E3"                                                                                                                                           ─╯
+Microsoft Corp
+```
 
 If you provide a invalid Mac Address the Output will show:
 ```javascript
